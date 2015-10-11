@@ -13,13 +13,7 @@ public class CreateAParty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createparty);
-<<<<<<< Updated upstream
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-=======
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
->>>>>>> Stashed changes
+
 
         //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         // fab.setOnClickListener(new View.OnClickListener() {
