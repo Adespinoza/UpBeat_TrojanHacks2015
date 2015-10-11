@@ -26,7 +26,7 @@ public class MainActivity extends Activity implements
     // TODO: Replace with your client ID
     private static final String CLIENT_ID = "91fa2d253e0347d1a7c0d63a3ce9540a";
     // TODO: Replace with your redirect URI
-    private static final String REDIRECT_URI = "localhost:8000/auth";
+    private static final String REDIRECT_URI = "currentparty://onActivityResult";
 
     // Request code that will be passed together with authentication result to the onAuthenticationResult callback
     // Can be any integer
@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements
 
         AuthenticationRequest.Builder builder =
                 new AuthenticationRequest.Builder(CLIENT_ID, AuthenticationResponse.Type.TOKEN, REDIRECT_URI);
-        builder.setScopes(new String[]{"user-read-private", "streaming"});
+        builder.setScopes(new String[]{"user-read-private", "streaming"});  
         AuthenticationRequest request = builder.build();
 
         AuthenticationClient.openLoginActivity(this, REQUEST_CODE, request);
@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
-
+        //Log.e("MainActivity", intent.getAction());
         // Check if result comes from the correct activity
         if (requestCode == REQUEST_CODE) {
             AuthenticationResponse response = AuthenticationClient.getResponse(resultCode, intent);
@@ -73,7 +73,7 @@ public class MainActivity extends Activity implements
                     public void onInitialized(Player player) {
                         mPlayer.addConnectionStateCallback(MainActivity.this);
                         mPlayer.addPlayerNotificationCallback(MainActivity.this);
-                        mPlayer.play("spotify:track:2TpxZ7JUBn3uw46aR7qd6V");
+                        mPlayer.play("spotify:track:1SWtzh0fKCtJsEr81LQBwK");
                     }
 
                     @Override
@@ -98,6 +98,7 @@ public class MainActivity extends Activity implements
     @Override
     public void onLoginFailed(Throwable error) {
         Log.d("MainActivity", "Login failed");
+        error.printStackTrace();
     }
 
     @Override
