@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class CreateAParty extends AppCompatActivity {
-    
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
