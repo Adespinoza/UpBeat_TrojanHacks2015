@@ -27,7 +27,11 @@
         android:ems="20"
         android:imeOptions="actionDone"
         android:id="@+id/editText"
+<<<<<<< HEAD
         android:layout_marginTop="190dp"
+=======
+        android:layout_marginTop="154dp"
+>>>>>>> parent of ac6d17f... text edit
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
