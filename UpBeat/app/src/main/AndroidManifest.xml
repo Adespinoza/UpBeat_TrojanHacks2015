@@ -13,16 +13,20 @@
             android:label="UpBeat" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="currentparty" android:host="onActivityResult"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="onActivityResult"
+                    android:scheme="currentparty" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -30,6 +34,10 @@
             android:name="com.example.adamespinoza.UpBeat.FindYourParty"
             android:label="@string/title_activity_find_your_party"
             android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CreateAParty"
+            android:label="@string/title_activity_create_aparty" >
         </activity>
     </application>
 
