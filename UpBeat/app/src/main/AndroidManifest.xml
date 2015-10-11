@@ -9,7 +9,7 @@
         android:label="UpBeat"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.adamespinoza.UpBeat.MainActivity"
+            android:name=".MainActivity"
             android:label="UpBeat" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,13 +31,18 @@
             android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="com.example.adamespinoza.UpBeat.FindYourParty"
+            android:name=".FindYourParty"
             android:label="@string/title_activity_find_your_party"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:name=".CreateAParty"
             android:label="@string/title_activity_create_aparty" >
+        </activity>
+        <activity
+            android:name=".CreateAParty"
+            android:label="@string/title_activity_create_aparty"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 
