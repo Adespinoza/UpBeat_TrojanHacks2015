@@ -1,17 +1,12 @@
 package com.example.adamespinoza.UpBeat;
 
 import android.app.Activity;
-import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
-
-import com.example.adamespinoza.UpBeat.R;
 
 public class FindYourParty extends Activity {
     @Override
@@ -28,9 +23,20 @@ public class FindYourParty extends Activity {
                 "Woodstock"
         };
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, songs);
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.list2);
         listView.setAdapter(adapter);
 
+
+        final Intent intent3 = new Intent(this, CurrentParty.class);
+
+        final Button button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //code on click
+               // startActivity(intent3);
+                setContentView(R.layout.activity_current_party);
+            }
+        });
 
         }
 
