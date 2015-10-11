@@ -35,10 +35,13 @@
             android:label="@string/title_activity_find_your_party"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+<<<<<<< Updated upstream
         <!--<activity-->
             <!--android:name=".CreateAParty"-->
             <!--android:label="@string/title_activity_create_aparty" >-->
         <!--</activity>-->
+=======
+>>>>>>> Stashed changes
         <activity
             android:name=".CreateAParty"
             android:label="@string/title_activity_create_aparty"

@@ -83,6 +83,16 @@ public class MainActivity extends Activity implements
             }
         });
 
+        final Intent intent2 = new Intent(this, CreateAParty.class);
+
+        final Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //code on click
+                startActivity(intent2);
+            }
+        });
+
     }
 
     @Override
