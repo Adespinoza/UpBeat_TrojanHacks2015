@@ -35,10 +35,10 @@
             android:label="@string/title_activity_find_your_party"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity
-            android:name=".CreateAParty"
-            android:label="@string/title_activity_create_aparty" >
-        </activity>
+        <!--<activity-->
+            <!--android:name=".CreateAParty"-->
+            <!--android:label="@string/title_activity_create_aparty" >-->
+        <!--</activity>-->
         <activity
             android:name=".CreateAParty"
             android:label="@string/title_activity_create_aparty"
