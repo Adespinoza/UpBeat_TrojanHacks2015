@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_find_your_party">FindYourParty</string>
     <string name="title_activity_create_aparty">CreateAParty</string>
+    <string name="title_activity_host_party">HostParty</string>
 </resources>

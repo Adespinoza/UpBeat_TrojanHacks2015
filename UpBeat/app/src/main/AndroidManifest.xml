@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:label="UpBeat"
-        android:icon="@drawable/ic_launcher.png"
+        android:icon="@drawable/icon"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
             android:name=".MainActivity"
@@ -43,6 +43,11 @@
         <activity
             android:name=".CreateAParty"
             android:label="@string/title_activity_create_aparty"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".HostParty"
+            android:label="@string/title_activity_host_party"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
