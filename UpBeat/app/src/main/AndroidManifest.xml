@@ -7,6 +7,7 @@
     <application
         android:allowBackup="true"
         android:label="UpBeat"
+        android:icon="@drawable/ic_launcher.png"
         android:theme="@style/AppTheme.NoActionBar" >
         <activity
             android:name=".MainActivity"
