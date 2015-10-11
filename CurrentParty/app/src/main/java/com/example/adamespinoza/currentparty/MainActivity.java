@@ -7,6 +7,8 @@ package com.example.adamespinoza.currentparty;
         import android.content.Intent;
         import android.os.Bundle;
         import android.util.Log;
+        import android.view.View;
+        import android.widget.Button;
 
         import com.spotify.sdk.android.player.Spotify;
         import com.spotify.sdk.android.authentication.AuthenticationClient;
@@ -36,6 +38,18 @@ public class MainActivity extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Intent intent = new Intent(this, FindYourParty.class);
+
+        final Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                //code on click
+                startActivity(intent);
+
+            }
+        });
 
         AuthenticationRequest.Builder builder =
                 new AuthenticationRequest.Builder(CLIENT_ID, AuthenticationResponse.Type.TOKEN, REDIRECT_URI);
